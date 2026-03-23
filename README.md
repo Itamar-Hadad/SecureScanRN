@@ -1,4 +1,4 @@
-# SecureScan — React Native (Expo)
+# SecureScan, React Native (Expo) Conversion
 
 > **Note on development process:** I originally built this application in Android (Kotlin) as my primary submission for the Unixi Junior Mobile Developer assignment. This React Native version is a full conversion of that Android app, created with the assistance of **Claude Code** (Anthropic's AI coding tool). Claude Code translated the architecture, screens, API integration, and navigation from Kotlin/Android into React Native/JavaScript, while I guided the process, ran and tested the app on a real device, and debugged all issues that came up during development. I understand the full code and can explain every part of it.
 
@@ -88,9 +88,6 @@ src/utils/         — qrParser, dateFormatter
 **Expo Go** — install this app on your physical device before running:
 - Android: [Google Play Store → search "Expo Go"](https://play.google.com/store/apps/details?id=host.exp.exponent)
 - iOS: App Store → search "Expo Go"
-
-> This app is required to run the project on your phone without needing to build a native binary. Make sure you have **SDK 54** or later installed (check in Expo Go settings).
-
 ---
 
 ### 2. Install dependencies
@@ -104,43 +101,15 @@ npm install --legacy-peer-deps
 
 ### 3. Start backend
 
-Run the provided backend server using Docker:
-
-```bash
-cd ../unixi_mobile_mock_api
-docker build -t unixi-mock-api .
-docker run --rm -p 8080:8080 unixi-mock-api
-```
-
-The backend will be available at `http://localhost:8080`.
+Run the provided backend server from the assignment instructions.
 
 ---
 
 ### 4. Configure QR
 
-Get demo QR tokens from:
-
-```
-GET http://localhost:8080/demo/qr-tokens
-```
-
-The QR code must contain a JSON string in this format:
-
-```json
-{
-  "baseUrl": "http://YOUR_LOCAL_IP:8080",
-  "token": "TOKEN_FROM_DEMO_ENDPOINT"
-}
-```
-
-> **Important:** Use your machine's local IP address, not `localhost`. Your phone cannot reach your computer via `localhost` over Wi-Fi.
->
-> To find your local IP:
-> - macOS: `ipconfig getifaddr en0`
-> - Windows: `ipconfig`
-
-Paste the JSON into any free QR code generator (Text mode) to create the QR image.
-
+Generate demo QR with values from:
+- `GET /demo/qr-tokens`
+Make sure QR content matches the app’s expected format for backend URL/token.
 ---
 
 ### 5. Run app
