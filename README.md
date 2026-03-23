@@ -142,16 +142,32 @@ Scan your SecureScan QR code and complete the auth flow.
 
 ## Screenshots
 
-**Splash Screen**
+### QR Scan Screen
+<p align="center">
+  <img src="screenshotRN/qrscreen.jpeg" width="250"/>
+</p>
 
-**QR Scan Screen**
+### Authentication Screen
+<p align="center">
+  <img src="screenshotRN/authscreen.jpeg" width="250"/>
+</p>
 
-**Authentication Screen**
+### Error Screen
+<p align="center">
+  <img src="screenshotRN/errorscreen.jpeg" width="250"/>
+</p>
 
-**Error Screen**
+### Success Screen
+<p align="center">
+  <img src="screenshotRN/successscreen.jpeg" width="250"/>
+</p>
 
-**Success Screen**
+### Main Screen — Home Tab
+<p align="center">
+  <img src="screenshotRN/homescreen.jpeg" width="250"/>
+</p>
 
-**Main Screen: Home Tab**
-
-**Main Screen: Device Info Tab**
+### Main Screen — Device Info Tab
+<p align="center">
+  <img src="screenshotRN/deviceinfoscreen.jpeg" width="250"/>
+</p>
