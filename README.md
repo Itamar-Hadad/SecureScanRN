@@ -159,7 +159,7 @@ Scan your SecureScan QR code and complete the auth flow.
 
 ### Success Screen
 <p align="center">
-  <img src="screenshotRN/successscreen.jpeg" width="250"/>
+  <img src="screenshotRN/success screen.jpeg" width="250"/>
 </p>
 
 ### Main Screen — Home Tab
